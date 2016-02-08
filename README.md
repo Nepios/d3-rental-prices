@@ -1,4 +1,4 @@
-# d3 ~~dc.js~~ zip code choropleth
+# d3 zip code choropleth
 
 Based on:
 * ~~[US Venture Capital Landscape 2011](http://dc-js.github.io/dc.js/vc/)~~
@@ -10,8 +10,7 @@ Based on:
 
 ### Data sources
 
-* CA Population [Data](http://www.dof.ca.gov/research/demographic/state_census_data_center/census_2010/documents/2010Census_DemoProfile1_ZCTA.xls)
-* CA Zip Code [Shapefile](http://geocommons.com/overlays/305142.zip), or [US Census](ftp://ftp2.census.gov/geo/pvs/tiger2010st/06_California/06/)
+Retrieve shapefile for the state from census site. The following work for california, adapt to WA.
 
 Convert shapefile into geojson format using `ogr2ogr`:
 ```bash
@@ -28,6 +27,5 @@ $ topojson -o zip_code_crs84.topojson --properties zipcode=ZCTA5CE10 zip_code_cr
 ### Todo
 
 - [x] integrate [mousewheel-zoom + click-to-center](http://bl.ocks.org/mbostock/2206340) into ~~dc.js viz~~ d3 viz
-- [x] convert `zip_code_crs84.geojson` to TopoJSON format
 - [ ] add data dimensions to filter
 - [ ] add county shapefile layer
