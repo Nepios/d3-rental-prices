@@ -1,0 +1,15 @@
+{
+  "name": "ca-population-by-zip-code",
+  "version": "0",
+  "authors": [
+    "semerdj <jsemer@gmail.com>"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "~3.3.4",
+    "d3": "~3.5.5",
+    "topojson": "~1.6.19",
+    "jquery": "~2.1.4"
+  },
+  "main": "/js/main.js"
+}
